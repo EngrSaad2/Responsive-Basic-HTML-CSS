@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
+
+/* top players design */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid #d1d1d1;
+    margin-bottom: 27px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #562eff;
+    padding: 20px;
+
+}
+
+.logo-sec img {
+    height: 40px;
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 200px;
+    width: 40px;
+    height: 50px;
+
+}
+
+.logo-title {
+    color: white;
+    font-size: 30px;
+}
+
+nav img {
+    vertical-align: middle;
+    margin-right: 200px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    width: 870px;
+    padding: 30px;
+    margin-top: 30px;
+
+}
+
+.top-player {
+    margin-bottom: 30px;
+
+}
+
+.section-title {
+    color: blueviolet;
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    align-items: center;
+
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.player h3 {
+    font-size: 16px;
+
+}
+
+/* top blog style */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog .thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-details {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.author {
+    color: #9f9f9f;
+    font-size: 16px;
+}
+
+.author a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* courses design */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 26px;
+
+}
+
+
+.course {
+    box-shadow: #9f9f9f;
+    border: 1px solid aqua;
+    border-radius: 20px;
+
+    margin-right: 20px;
+    padding: 10px 20px 10px 20px;
+
+}
+
+
+
+.course .course-banner img {
+    width: 100%;
+    height: 104px;
+    align-items: center;
+
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-star {
+    color: gold;
+    font-size: 12px;
+}
+
+.fa-star-half-stroke {
+    color: gold;
+    font-size: 12px;
+}
+
+.course-duration {
+    background-color: #d1d1d1;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fa-clock {
+    color: #9f9f9f;
+}
+
+/* Media Queries  for Responsive */
+
+@media screen and (max-width:688px) {
+
+    .container {
+        width: 100%;
+    }
+
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+
+    }
+
+    .logo-sec img {
+        height: 40px;
+        height: 50px;
+        vertical-align: middle;
+        margin-left: 0px;
+
+    }
+
+    nav img {
+        vertical-align: middle;
+        margin-right: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 5px;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        margin: 0;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:689px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+        align-content: center;
+
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 30px;
+
+
+    }
+
+    .logo-sec img {
+        width: 40px;
+        height: 50px;
+        vertical-align: middle;
+        margin-left: 0px;
+
+    }
+
+    nav img {
+        vertical-align: middle;
+        margin-right: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 5px;
+    }
+
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+
+    }
+
+}
